@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PotterMore</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#"
+          ><img
+            src="images/pottermore-logo.png"
+            alt="logo"
+            width="100"
+            height="30"
+        /></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="open navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="exit-picture"
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Hogwarts</a></li>
+            <li><a href="#">Quizzes</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li class="login"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">THE WIZARDING WORLD</p>
+          <h1>Get closer to magic, anytime, anywhere</h1>
+
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Join now</a>
+            <a href="#" class="watch-video-cta"
+              ><img src="images/watch.svg" alt="watch video" /> Watch video</a
+            >
+          </div>
+        </div>
+
+        <img src="images/castle.jpg" class="hero-img" alt="Hogwarts Castle" />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h1>What's New?</h1>
+
+        <ul class="features-list">
+          <li>A little bit of Harry Potter magic everyday of the year</li>
+          <li>Harry Potter Name Generator</li>
+          <li>Discover your Patronus</li>
+          <li>Know which house you belong to</li>
+          <li>Introducing Harry Potter: Reading Magic</li>
+          <li>Guide on DYI merchs</li>
+        </ul>
+
+        <img src="images/fans.jpg" alt="hp kids" />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/dumbledore.jpg" alt="headmaster" />
+
+            <blockquote>
+              "It is our choices that we show what we truly are, far more than
+              our abilities"
+            </blockquote>
+            <cite>-Albus Dumbledore</cite>
+          </li>
+          <li>
+            <img src="images/snape.jpg" alt="headmaster" />
+
+            <blockquote>
+              "I can teach you to bottle fame, brew glory, even stop death"
+            </blockquote>
+            <cite>-Severus Snape</cite>
+          </li>
+          <li>
+            <img src="images/professor-mcgonagall.jpg" alt="headmaster" />
+
+            <blockquote>
+              "Only difference between truth and lies is courage and cowardice"
+            </blockquote>
+            <cite>-Minerva McGonagall</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>We will send you an owl!</h2>
+
+          <form action="">
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input type="submit" class="send-message-cta" value="Send" />
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.2875018737595!2d-0.41696979999999995!3d51.69118369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402fabd5cc11%3A0xf1355f57a03a3cba!2s4%20Privet%20Drive!5e0!3m2!1sen!2snp!4v1626184016977!5m2!1sen!2snp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menu = document.getElementById("mobile-cta");
+      const nav = document.querySelector("nav");
+      const exit = document.getElementById("mobile-exit");
+
+      menu.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      exit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
